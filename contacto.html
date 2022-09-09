@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> contacto</title>
+
+ <link rel="stylesheet" href="css/contacto.css">
+    
+<script src="jquery-3.2.1.js"></script>
+<script src="script.js"></script>
+    
+</head>
+
+<body>
+    
+   <!--<div class="modal_wrap">
+      
+        <div class="mensaje_modal">
+        <h3>Herrores encontrados</h3>
+        
+        <p> <img src="img/roja-cruz.png"> Escriba su nombre</p>
+        <p> <img src="img/roja-cruz.png">Ingrese su correo</p>
+        <p> <img src="img/roja-cruz.png">Escriba su mensaje</p>
+    <span id="btnclose">cerrar</span>
+          
+        </div>
+    </div> -->
+    
+    
+    
+<section class="form_wrap">
+ <section class="contact-info">
+   <section class="info_title">
+    <span class="fa fa-user-circle">
+       </span> <img src="img/icono-persona.png">
+    <h2>Información<br> del contacto</h2>
+   </section>
+       
+   <section class="info_items">
+    <p><span class="fa fa-envelope">
+        <img src="img/icono-carta.png"> </span> </h6>andresitogigolo32@hotmail.com</h6></p>
+    
+    <p><span class="fa fa-mobile">
+        <img src="img/celular-icono.png"> </span>3212499646</p>
+   </section>
+</section>
+       
+
+      
+    
+       
+    <form action="public/enviar.php" method="post" class="form_contact">
+    <h2>Envia un mensaje</h2>
+        
+    <div class="user_info">
+       
+    <label form="name"> Nombres  </label> 
+    <input type="text" id="names" name="nombre" required>
+    
+    <label form="phone"> Telefono/celular </label> 
+    <input type="text" id="phone">
+    
+    
+     <label form="email">Correo electronico</label> 
+    <input type="text" id="email" name="correo" required>
+   
+    <label form="names">Mensaje</label> 
+    <textarea  id="mensaje" name="mensaje" required></textarea>
+    
+    <input type="button" value="Enviar mesaje"  id="warnings" >
+
+    <!--btnsend--> 
+
+        
+      </div>
+
+   </form>
+
+   <script src="app.js"></script>
+   
+    </section>  
+    
+    
+    
+</body>
+</html>

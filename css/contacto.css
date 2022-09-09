@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+  margin=0;
+  padding=0;
+  box-sizing: border-box;
+    
+}
+
+:focus{
+  outline:none;  
+    
+}
+
+
+body
+{
+  
+  background-size: #fff;
+  /*background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);*/
+  font-family: 'Open sans';
+}
+
+
+.form_wrap
+{
+    width: 1050px;
+    height: 530px;
+    margin:50px auto;
+    display: flex;
+    background: rgba(249,244,244,1.00);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+
+.contact-info::before
+{
+    content:"";
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #000;
+    /*background: #4091EC;*/
+    opacity: 0.9;
+}
+
+
+
+.contact-info
+{  
+   width:38%; 
+   position: relative;
+    
+   display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+   background-image: url("file:///C|/Users/Omar Camargo/Documents/Sitio sin nombre 2/10.jpg");
+   background-size:cover;
+   background-position: center center; 
+}
+
+.info_title, .info_items
+{
+    position: relative;
+    z-index: 2;
+    color:aliceblue;
+}
+
+.info_title
+{
+    
+margin-bottom: 0px;
+}
+
+.info_title span
+{
+  font-size:100px;
+  display:block;
+  text-align: center;
+  margin-bottom: 15px;
+    
+}
+
+.info_title{
+    
+   font-size:35px; 
+    text-align:center;
+}
+
+.info_items p
+{
+    
+  display:flex;
+  align-items: center;
+  font-size:16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.fa-envelope img
+{
+    width: 40px;
+    margin-right: 5px;  
+}
+
+.fa-mobile img
+{
+   width: 40px; 
+   height: 60px;
+   margin-right: 5px;
+    
+}
+
+.info_title img
+{
+   width: 100px;
+   top:130px;
+   margin-bottom: -50px; 
+}
+
+form,form_contact
+{
+    
+    width: 62%;
+    padding: 30px 40px;
+    
+}
+
+form.form_contact h2
+{
+    
+    font-size:25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.from_contact .user_info
+{
+    
+    display:flex;
+    flex-direction: column;
+}
+
+form.form_contact label 
+{
+    font-weight: 600;
+}
+
+form.form_contact input,
+.form_contact textarea
+{
+    
+    width:100%;
+    padding:8px 0px 5px;
+    margin-bottom: 20px;
+    
+    border:none;
+    border-bottom: 2px solid #D1D1D1;
+    
+    font-family: 'open sans';
+    color: #5a5a5a;
+    font-size:14px;
+    font-weight: 400;
+    
+}
+
+.form_contact textarea
+{
+    
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+.form_contact input[type="button"]
+
+{
+    width: 180px;
+    background: #4091EC;
+    padding: 10px;
+    border:none;
+    border-radius:25px; 
+    
+    align-self:flex-end;
+    
+    color:aliceblue;
+    font-family: 'open sans';
+    font-size: 16px;
+    font-weight: 600;
+    cursor:pointer;
+}
+   
+.form_contact input[type="button"]:hover
+{
+    
+    background: #3371B6;
+}
+
+.modal_wrap
+{
+    
+width: 100%;
+height: 100%;
+background: rgba:(0,0,0,0.7);
+position: fixed;
+top:0;
+left:0;
+z-index: 3;
+    
+display:flex;
+justify-content: center;
+align-items:center;
+    
+
+}
+
+.mensaje_modal
+{
+    
+background: rgba(245,242,242,1.00);
+box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+width: 400px;
+padding: 30px 20px 15px;
+
+}
+
+.mensaje_modal h3
+{
+    
+    text-align: center;
+    font-family:'ubuntu';
+    font-size:20px;
+    font-weight:400;
+    
+}
+
+.mensaje_modal h3:after
+{
+    content:" ";
+    display:block;
+    width:100%;
+    height: 1px;
+    background:#c5c5c5;
+    margin: 10px 0px 15px;
+    
+}
+
+.mensaje_modal p
+{
+    font-size: 16px;
+    color:#606060;
+    
+}
+
+.mensaje_modal img
+{
+    width: 23px;
+    height: 23px; 
+    margin-right: 8px;
+    display:inline-block;
+   
+   
+}
+
+.mensaje_modal #btnclose
+{
+    
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor:pointer;
+    
+}
+
+
+@media screen and (max-width: 600px)
+{
+    
+   .form_wrap
+    {
+        width: 90%;
+    }
+    
+    .info_title h2
+    {
+    position: relative;
+    width: 10px;
+    font-size: 10px;
+    margin: 2px;
+    word-spacing: 10px;
+    word-wrap: 10px;
+    }
+    
+     .info_title img
+    {
+        top:10%;
+        margin-bottom: 0%;
+        
+    }
+    
+    
+   .form_contact input[type="button"]
+{
+    font-weight: 500%;
+    width: 98%;
+    
+}
+  
+    .info_items p
+    {
+        
+   /*display:webkit-flex;
+    display:-ms-flexbox;*/
+   display:flex;
+        
+   flex-direction: column;     
+              
+  align-items: center;
+  font-size:12px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  position: relative;
+  top:25px;
+  overflow: hidden;
+        
+    }
+    
+  
+    
+    
+
+    
+}
+
+@media screen and (max-width: 992px)
+    
+{   
+   .form_wrap
+    {
+       
+       width: 70%;
+    }
+
+    .info_title h2
+    {
+        flex-direction:column;
+        align-items:center;
+        width: 90%; 
+        font-size: 20px;
+        margin: 5px;
+        
+    }
+    
+    .info_title img
+    {
+        top:10%;
+        margin-bottom: 0%;
+    }
+    
+    .info_items
+    {
+      width: 90%;   
+      
+    }
+    
+     .info_items p
+    {
+        
+   /*display:webkit-flex;
+    display:-ms-flexbox;*/
+   display:flex;
+        
+   flex-direction: column;     
+        
+        
+  align-items: center;
+  font-size:12px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  position: relative;
+  top:25px;
+  overflow: hidden;
+
+        
+    }
+    
+.info_items h6
+    {
+    word-spacing: 10px;
+    text-indent: 5px;
+    letter-spacing: 5px;
+          
+    }
+
+}
+
+
+    
+
+
+
